@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { useLanguage } from '@/contexts/LanguageContext';
-import { Languages, Menu, X } from 'lucide-react';
+import { Languages, Menu, X, Piano } from 'lucide-react';
 
 const Navigation = () => {
   const { language, setLanguage, t } = useLanguage();
@@ -25,10 +25,11 @@ const Navigation = () => {
         <div className="flex items-center justify-between">
           {/* Logo */}
           <div 
-            className="font-display font-bold text-2xl text-primary cursor-pointer transition-smooth hover:text-primary-light"
+            className="flex items-center space-x-3 font-display font-bold text-2xl text-primary cursor-pointer transition-smooth hover:text-primary-light"
             onClick={() => scrollToSection('home')}
           >
-            Jenny's Piano
+            <Piano className="h-8 w-8" />
+            <span>Jenny's Piano</span>
           </div>
 
           {/* Desktop Navigation */}

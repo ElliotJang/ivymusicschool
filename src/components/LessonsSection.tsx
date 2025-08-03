@@ -45,7 +45,7 @@ const LessonsSection = () => {
   ];
 
   return (
-    <section id="lessons" className="py-20 bg-background">
+    <section id="lessons" className="py-20 gradient-subtle">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="font-display text-4xl md:text-5xl font-bold text-primary mb-4">
