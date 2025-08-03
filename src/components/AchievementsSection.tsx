@@ -58,7 +58,7 @@ const AchievementsSection = () => {
           <div className="flex items-center justify-center mb-6">
             <GraduationCap className="text-accent mr-4" size={48} />
             <h3 className="font-display text-3xl font-semibold text-primary">
-              명문대 합격생들
+              {t('achievements.university.title')}
             </h3>
           </div>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto mb-8">

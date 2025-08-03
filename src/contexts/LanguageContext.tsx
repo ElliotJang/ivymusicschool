@@ -61,6 +61,7 @@ const translations = {
     'achievements.competition': '10명 이상의 SYMF(남서부 청소년 음악 콩쿠르) 수상자',
     'achievements.merit': 'Certificate of Merit 레벨 10 이상 합격자 15명 이상 (대부분 Honors)',
     'achievements.universities': '제니 선생님의 제자들은 음악 전공 또는 장학금으로 아래 명문대학에 합격했습니다!',
+    'achievements.university.title': '명문대 합격생들',
     
     // FAQ
     'faq.title': '자주 묻는 질문',
@@ -136,6 +137,7 @@ const translations = {
     'achievements.competition': '10+ Southwestern Youth Music Festival Competition Winners',
     'achievements.merit': 'Certificate of Merit 15+ level 10 passed (Majority with Honors)',
     'achievements.universities': 'My students have been accepted to top universities — some with music majors or scholarships!',
+    'achievements.university.title': 'University Admissions',
     
     // FAQ
     'faq.title': 'Frequently Asked Questions',
