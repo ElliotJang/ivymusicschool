@@ -169,7 +169,7 @@ const translations = {
     // Contact
     'contact.title': 'Contact',
     'contact.subtitle': 'For more Info and Pricing',
-    'contact.location': 'Location: Lawrenceville, GA',
+    'contact.location': 'Lawrenceville, GA',
     'contact.phone': 'Phone',
     'contact.email': 'Email',
     'contact.address': 'Location',
