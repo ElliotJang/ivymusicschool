@@ -124,7 +124,7 @@ const LessonsSection = () => {
         </div>
 
         {/* Additional Lesson Categories */}
-        <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+        <div className="grid md:grid-cols-2 gap-6">
           <Card className="shadow-card hover:shadow-elegant transition-all duration-300 transform hover:-translate-y-2 border-0 gradient-card">
             <CardHeader>
               <CardTitle className="font-display text-2xl text-primary text-center">
