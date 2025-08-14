@@ -1,6 +1,6 @@
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { useLanguage } from '@/contexts/LanguageContext';
-import { Music, Heart, Users, Brain, Zap, Smile } from 'lucide-react';
+import { Music, Heart, Users, Brain, Zap, Smile, UserCheck } from 'lucide-react';
 
 const LessonsSection = () => {
   const { t } = useLanguage();
@@ -123,29 +123,31 @@ const LessonsSection = () => {
           </div>
         </div>
 
-        {/* Additional Lesson Categories */}
+        {/* Age Group Categories */}
         <div className="grid md:grid-cols-2 gap-6">
           <Card className="shadow-card hover:shadow-elegant transition-all duration-300 transform hover:-translate-y-2 border-0 gradient-card">
-            <CardHeader>
-              <CardTitle className="font-display text-2xl text-primary text-center">
+            <CardHeader className="text-center pb-4">
+              <UserCheck className="mx-auto mb-4 text-primary" size={48} />
+              <CardTitle className="font-display text-xl text-primary">
                 {t('lessons.adults')}
               </CardTitle>
             </CardHeader>
             <CardContent>
-              <p className="text-muted-foreground text-center">
+              <p className="text-muted-foreground text-center leading-relaxed">
                 {t('lessons.adults.desc')}
               </p>
             </CardContent>
           </Card>
           
           <Card className="shadow-card hover:shadow-elegant transition-all duration-300 transform hover:-translate-y-2 border-0 gradient-card">
-            <CardHeader>
-              <CardTitle className="font-display text-2xl text-primary text-center">
+            <CardHeader className="text-center pb-4">
+              <Smile className="mx-auto mb-4 text-primary" size={48} />
+              <CardTitle className="font-display text-xl text-primary">
                 {t('lessons.kids')}
               </CardTitle>
             </CardHeader>
             <CardContent>
-              <p className="text-muted-foreground text-center">
+              <p className="text-muted-foreground text-center leading-relaxed">
                 {t('lessons.kids.desc')}
               </p>
             </CardContent>
