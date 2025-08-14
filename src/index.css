@@ -172,22 +172,4 @@
   .transition-bounce {
     transition: var(--transition-bounce);
   }
-
-  /* University Carousel Animation */
-  .university-scroll {
-    animation: infiniteScroll 30s linear infinite;
-  }
-
-  @keyframes infiniteScroll {
-    0% {
-      transform: translateX(0);
-    }
-    100% {
-      transform: translateX(-33.333%);
-    }
-  }
-
-  .university-scroll:hover {
-    animation-play-state: paused;
-  }
 }
