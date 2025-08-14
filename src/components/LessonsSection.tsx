@@ -5,7 +5,7 @@ import { Music, Heart, Users, Brain, Zap, Smile } from 'lucide-react';
 const LessonsSection = () => {
   const { t } = useLanguage();
 
-  const lessonTypes = [
+  const topRowLessons = [
     {
       icon: Music,
       title: t('lessons.classical'),
@@ -16,19 +16,23 @@ const LessonsSection = () => {
       icon: Heart,
       title: t('lessons.pop'),
       description: t('lessons.pop.desc'),
-      color: 'text-accent'
-    },
-    {
-      icon: Zap,
-      title: t('lessons.chord'),
-      description: t('lessons.chord.desc'),
-      color: 'text-primary-light'
-    },
+      color: 'text-primary'
+    }
+  ];
+
+  const middleRowLesson = {
+    icon: Zap,
+    title: t('lessons.chord'),
+    description: t('lessons.chord.desc'),
+    color: 'text-primary'
+  };
+
+  const bottomRowLessons = [
     {
       icon: Brain,
       title: t('lessons.beginner'),
       description: t('lessons.beginner.desc'),
-      color: 'text-accent'
+      color: 'text-primary'
     },
     {
       icon: Users,
@@ -55,8 +59,50 @@ const LessonsSection = () => {
             {t('lessons.options')}
           </h3>
           
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {lessonTypes.map((lesson, index) => (
+          {/* Top Row - Classical and Pop */}
+          <div className="grid md:grid-cols-2 gap-6 mb-6">
+            {topRowLessons.map((lesson, index) => (
+              <Card 
+                key={index} 
+                className="shadow-card hover:shadow-elegant transition-all duration-300 transform hover:-translate-y-2 border-0 gradient-card"
+              >
+                <CardHeader className="text-center pb-4">
+                  <lesson.icon className={`mx-auto mb-4 ${lesson.color}`} size={48} />
+                  <CardTitle className="font-display text-xl text-primary">
+                    {lesson.title}
+                  </CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-muted-foreground text-center leading-relaxed">
+                    {lesson.description}
+                  </p>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+
+          {/* Middle Row - Chord & Lead Sheet (Centered) */}
+          <div className="flex justify-center mb-6">
+            <div className="w-full max-w-md">
+              <Card className="shadow-card hover:shadow-elegant transition-all duration-300 transform hover:-translate-y-2 border-0 gradient-card">
+                <CardHeader className="text-center pb-4">
+                  <middleRowLesson.icon className={`mx-auto mb-4 ${middleRowLesson.color}`} size={48} />
+                  <CardTitle className="font-display text-xl text-primary">
+                    {middleRowLesson.title}
+                  </CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-muted-foreground text-center leading-relaxed">
+                    {middleRowLesson.description}
+                  </p>
+                </CardContent>
+              </Card>
+            </div>
+          </div>
+
+          {/* Bottom Row - Beginner and Intermediate */}
+          <div className="grid md:grid-cols-2 gap-6">
+            {bottomRowLessons.map((lesson, index) => (
               <Card 
                 key={index} 
                 className="shadow-card hover:shadow-elegant transition-all duration-300 transform hover:-translate-y-2 border-0 gradient-card"
