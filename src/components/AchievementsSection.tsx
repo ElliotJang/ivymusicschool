@@ -39,7 +39,7 @@ const AchievementsSection = () => {
         {/* Achievement Stats */}
         <div className="grid md:grid-cols-3 gap-8 mb-16">
           {achievements.map((achievement, index) => (
-            <Card key={index} className="shadow-card gradient-card border-0 text-center">
+            <Card key={index} className="shadow-card hover:shadow-elegant transition-all duration-300 transform hover:-translate-y-2 gradient-card border-0 text-center">
               <CardContent className="p-8">
                 <achievement.icon className={`mx-auto mb-4 ${achievement.color}`} size={48} />
                 <div className="font-display text-4xl font-bold text-primary mb-2">
