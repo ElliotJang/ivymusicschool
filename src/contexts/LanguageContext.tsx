@@ -85,7 +85,15 @@ const translations = {
     // Contact
     'contact.title': '문의 및 상담',
     'contact.subtitle': '더 자세한 정보 및 수업료 상담을 원하시면 아래로 연락 주세요:',
-    'contact.location': '조지아주 로렌스빌 (Lawrenceville, GA)'
+    'contact.location': '조지아주 로렌스빌 (Lawrenceville, GA)',
+    'contact.phone': '전화번호',
+    'contact.email': '이메일',
+    'contact.address': '위치',
+    'contact.callButton': '전화로 문의하기',
+    'contact.smsButton': '문자로 문의하기',
+    'contact.emailButton': '이메일로 문의하기',
+    'contact.welcomeText': '상담은 언제든지 환영합니다!',
+    'contact.infoText': '수업료와 일정에 대해 자세히 안내해드립니다.'
   },
   en: {
     // Navigation
@@ -161,7 +169,15 @@ const translations = {
     // Contact
     'contact.title': 'Contact',
     'contact.subtitle': 'For more Info and Pricing',
-    'contact.location': 'Location: Lawrenceville, GA'
+    'contact.location': 'Location: Lawrenceville, GA',
+    'contact.phone': 'Phone',
+    'contact.email': 'Email',
+    'contact.address': 'Location',
+    'contact.callButton': 'Call for Inquiry',
+    'contact.smsButton': 'Text for Inquiry',
+    'contact.emailButton': 'Email for Inquiry',
+    'contact.welcomeText': 'Consultation is always welcome!',
+    'contact.infoText': 'We will provide detailed information about tuition and schedule.'
   }
 };
 

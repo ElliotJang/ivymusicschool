@@ -35,70 +35,70 @@ const ContactSection = () => {
             <CardContent className="p-8">
               <div className="grid md:grid-cols-2 gap-8">
                 {/* Contact Information */}
-                <div className="space-y-6">
-                  <div className="flex items-center space-x-4 p-4 rounded-lg bg-white/50">
-                    <Phone className="text-accent flex-shrink-0" size={24} />
-                    <div>
-                      <div className="font-semibold text-primary">전화번호</div>
-                      <div className="text-muted-foreground">213-505-7335</div>
-                    </div>
-                  </div>
+                  <div className="space-y-6">
+                   <div className="flex items-center space-x-4 p-4 rounded-lg bg-white/50">
+                     <Phone className="text-accent flex-shrink-0" size={24} />
+                     <div>
+                       <div className="font-semibold text-primary">{t('contact.phone')}</div>
+                       <div className="text-muted-foreground">213-505-7335</div>
+                     </div>
+                   </div>
 
-                  <div className="flex items-center space-x-4 p-4 rounded-lg bg-white/50">
-                    <Mail className="text-accent flex-shrink-0" size={24} />
-                    <div>
-                      <div className="font-semibold text-primary">이메일</div>
-                      <div className="text-muted-foreground">jennyspianoacademy@gmail.com</div>
-                    </div>
-                  </div>
+                   <div className="flex items-center space-x-4 p-4 rounded-lg bg-white/50">
+                     <Mail className="text-accent flex-shrink-0" size={24} />
+                     <div>
+                       <div className="font-semibold text-primary">{t('contact.email')}</div>
+                       <div className="text-muted-foreground">jennyspianoacademy@gmail.com</div>
+                     </div>
+                   </div>
 
-                  <div className="flex items-center space-x-4 p-4 rounded-lg bg-white/50">
-                    <MapPin className="text-accent flex-shrink-0" size={24} />
-                    <div>
-                      <div className="font-semibold text-primary">위치</div>
-                      <div className="text-muted-foreground">{t('contact.location')}</div>
-                    </div>
-                  </div>
-                </div>
+                   <div className="flex items-center space-x-4 p-4 rounded-lg bg-white/50">
+                     <MapPin className="text-accent flex-shrink-0" size={24} />
+                     <div>
+                       <div className="font-semibold text-primary">{t('contact.address')}</div>
+                       <div className="text-muted-foreground">{t('contact.location')}</div>
+                     </div>
+                   </div>
+                 </div>
 
-                {/* Contact Buttons */}
-                <div className="space-y-4">
-                  <Button
-                    onClick={handlePhoneCall}
-                    size="lg"
-                    className="w-full gradient-primary text-primary-foreground hover:shadow-glow transition-all duration-300 transform hover:scale-105"
-                  >
-                    <Phone className="mr-2" size={20} />
-                    전화로 문의하기
-                  </Button>
+                 {/* Contact Buttons */}
+                 <div className="space-y-4">
+                   <Button
+                     onClick={handlePhoneCall}
+                     size="lg"
+                     className="w-full gradient-primary text-primary-foreground hover:shadow-glow transition-all duration-300 transform hover:scale-105"
+                   >
+                     <Phone className="mr-2" size={20} />
+                     {t('contact.callButton')}
+                   </Button>
 
-                  <Button
-                    onClick={handleSMS}
-                    size="lg"
-                    variant="outline"
-                    className="w-full border-primary text-primary hover:bg-primary hover:text-primary-foreground transition-smooth"
-                  >
-                    <MessageCircle className="mr-2" size={20} />
-                    문자로 문의하기
-                  </Button>
+                   <Button
+                     onClick={handleSMS}
+                     size="lg"
+                     variant="outline"
+                     className="w-full border-primary text-primary hover:bg-primary hover:text-primary-foreground transition-smooth"
+                   >
+                     <MessageCircle className="mr-2" size={20} />
+                     {t('contact.smsButton')}
+                   </Button>
 
-                  <Button
-                    onClick={handleEmail}
-                    size="lg"
-                    variant="outline"
-                    className="w-full border-accent text-accent hover:bg-accent hover:text-accent-foreground transition-smooth"
-                  >
-                    <Mail className="mr-2" size={20} />
-                    이메일로 문의하기
-                  </Button>
+                   <Button
+                     onClick={handleEmail}
+                     size="lg"
+                     variant="outline"
+                     className="w-full border-accent text-accent hover:bg-accent hover:text-accent-foreground transition-smooth"
+                   >
+                     <Mail className="mr-2" size={20} />
+                     {t('contact.emailButton')}
+                   </Button>
 
-                  <div className="mt-6 p-4 bg-accent/10 rounded-lg">
-                    <p className="text-sm text-muted-foreground text-center">
-                      상담은 언제든지 환영합니다!<br />
-                      수업료와 일정에 대해 자세히 안내해드립니다.
-                    </p>
-                  </div>
-                </div>
+                   <div className="mt-6 p-4 bg-accent/10 rounded-lg">
+                     <p className="text-sm text-muted-foreground text-center">
+                       {t('contact.welcomeText')}<br />
+                       {t('contact.infoText')}
+                     </p>
+                   </div>
+                 </div>
               </div>
             </CardContent>
           </Card>
