@@ -35,12 +35,6 @@ const LessonsSection = () => {
       title: t('lessons.intermediate'),
       description: t('lessons.intermediate.desc'),
       color: 'text-primary'
-    },
-    {
-      icon: Smile,
-      title: t('lessons.kids'),
-      description: t('lessons.kids.desc'),
-      color: 'text-accent'
     }
   ];
 
@@ -85,7 +79,7 @@ const LessonsSection = () => {
 
         {/* Additional Lesson Categories */}
         <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-          <Card className="shadow-card gradient-card border-0">
+          <Card className="shadow-card hover:shadow-elegant transition-all duration-300 transform hover:-translate-y-2 border-0 gradient-card">
             <CardHeader>
               <CardTitle className="font-display text-2xl text-primary text-center">
                 {t('lessons.adults')}
@@ -98,7 +92,7 @@ const LessonsSection = () => {
             </CardContent>
           </Card>
           
-          <Card className="shadow-card gradient-card border-0">
+          <Card className="shadow-card hover:shadow-elegant transition-all duration-300 transform hover:-translate-y-2 border-0 gradient-card">
             <CardHeader>
               <CardTitle className="font-display text-2xl text-primary text-center">
                 {t('lessons.kids')}
