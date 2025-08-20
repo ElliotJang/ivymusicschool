@@ -22,7 +22,7 @@ const HeroSection = () => {
           alt="Piano Academy"
           className="w-full h-full object-cover"
         />
-        <div className="absolute inset-0 gradient-hero opacity-80"></div>
+        <div className="absolute inset-0 bg-primary/60"></div>
       </div>
 
       {/* Floating Musical Notes */}
@@ -46,7 +46,7 @@ const HeroSection = () => {
           <Button
             onClick={() => scrollToSection('contact')}
             size="lg"
-            className="gradient-primary text-primary-foreground hover:shadow-glow transition-all duration-300 transform hover:scale-105 px-8 py-4 text-lg font-semibold"
+            className="bg-primary text-primary-foreground hover:bg-primary/90 transition-all duration-300 px-8 py-4 text-lg font-semibold"
           >
             {t('hero.cta')}
           </Button>

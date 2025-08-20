@@ -43,7 +43,7 @@ const LessonsSection = () => {
   ];
 
   return (
-    <section id="lessons" className="py-20 gradient-subtle">
+    <section id="lessons" className="py-20 bg-secondary/30">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="font-display text-4xl md:text-5xl font-bold text-primary mb-4">
@@ -64,7 +64,7 @@ const LessonsSection = () => {
             {topRowLessons.map((lesson, index) => (
               <Card 
                 key={index} 
-                className="shadow-card hover:shadow-elegant transition-all duration-300 transform hover:-translate-y-2 border-0 gradient-card"
+                className="hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1 border bg-card"
               >
                 <CardHeader className="text-center pb-4">
                   <lesson.icon className={`mx-auto mb-4 ${lesson.color}`} size={48} />
@@ -84,7 +84,7 @@ const LessonsSection = () => {
           {/* Middle Row - Chord & Lead Sheet (Centered) */}
           <div className="flex justify-center mb-6">
             <div className="w-full max-w-md">
-              <Card className="shadow-card hover:shadow-elegant transition-all duration-300 transform hover:-translate-y-2 border-0 gradient-card">
+              <Card className="hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1 border bg-card">
                 <CardHeader className="text-center pb-4">
                   <middleRowLesson.icon className={`mx-auto mb-4 ${middleRowLesson.color}`} size={48} />
                   <CardTitle className="font-display text-xl text-primary">
@@ -105,7 +105,7 @@ const LessonsSection = () => {
             {bottomRowLessons.map((lesson, index) => (
               <Card 
                 key={index} 
-                className="shadow-card hover:shadow-elegant transition-all duration-300 transform hover:-translate-y-2 border-0 gradient-card"
+                className="hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1 border bg-card"
               >
                 <CardHeader className="text-center pb-4">
                   <lesson.icon className={`mx-auto mb-4 ${lesson.color}`} size={48} />
@@ -125,7 +125,7 @@ const LessonsSection = () => {
 
         {/* Age Group Categories */}
         <div className="grid md:grid-cols-2 gap-6">
-          <Card className="shadow-card hover:shadow-elegant transition-all duration-300 transform hover:-translate-y-2 border-0 gradient-card">
+          <Card className="hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1 border bg-card">
             <CardHeader className="text-center pb-4">
               <UserCheck className="mx-auto mb-4 text-primary" size={48} />
               <CardTitle className="font-display text-xl text-primary">
@@ -139,7 +139,7 @@ const LessonsSection = () => {
             </CardContent>
           </Card>
           
-          <Card className="shadow-card hover:shadow-elegant transition-all duration-300 transform hover:-translate-y-2 border-0 gradient-card">
+          <Card className="hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1 border bg-card">
             <CardHeader className="text-center pb-4">
               <Smile className="mx-auto mb-4 text-primary" size={48} />
               <CardTitle className="font-display text-xl text-primary">
