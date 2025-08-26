@@ -1,6 +1,6 @@
 import { Button } from '@/components/ui/button';
 import { useLanguage } from '@/contexts/LanguageContext';
-import { Piano, Music } from 'lucide-react';
+import { Music } from 'lucide-react';
 import heroImage from '@/assets/piano-hero.jpg';
 
 const HeroSection = () => {
@@ -36,7 +36,6 @@ const HeroSection = () => {
       {/* Content */}
       <div className="relative z-20 text-center max-w-4xl mx-auto px-6">
         <div className="animate-fade-in">
-          <Piano className="mx-auto mb-6 text-accent" size={64} />
           <h1 className="font-display text-5xl md:text-7xl font-bold text-white mb-6 drop-shadow-lg">
             {t('hero.title')}
           </h1>
