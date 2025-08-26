@@ -48,7 +48,7 @@ const LessonsSection = () => {
           </p>
         </div>
 
-        <div className="mb-8 md:mb-12">
+        <div>
           <h3 className="font-display text-2xl md:text-3xl font-semibold text-primary text-center mb-6 md:mb-8 animate-fade-in">
             {t('lessons.options')}
           </h3>
@@ -99,37 +99,37 @@ const LessonsSection = () => {
               </Card>
             ))}
           </div>
-        </div>
 
-        {/* Third Row - Age Group Categories */}
-        <div className="grid sm:grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">
-          <Card className="hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1 hover:scale-105 border bg-card animate-fade-in group" style={{ animationDelay: '0.4s' }}>
-            <CardHeader className="text-center pb-4">
-              <UserCheck className="mx-auto mb-4 text-primary group-hover:text-accent transition-colors duration-300" size={48} />
-              <CardTitle className="font-display text-xl text-primary group-hover:text-accent transition-colors duration-300">
-                {t('lessons.adults')}
-              </CardTitle>
-            </CardHeader>
-            <CardContent>
-              <p className="text-muted-foreground text-center leading-relaxed">
-                {t('lessons.adults.desc')}
-              </p>
-            </CardContent>
-          </Card>
-          
-          <Card className="hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1 hover:scale-105 border bg-card animate-fade-in group" style={{ animationDelay: '0.5s' }}>
-            <CardHeader className="text-center pb-4">
-              <Smile className="mx-auto mb-4 text-primary group-hover:text-accent transition-colors duration-300" size={48} />
-              <CardTitle className="font-display text-xl text-primary group-hover:text-accent transition-colors duration-300">
-                {t('lessons.kids')}
-              </CardTitle>
-            </CardHeader>
-            <CardContent>
-              <p className="text-muted-foreground text-center leading-relaxed">
-                {t('lessons.kids.desc')}
-              </p>
-            </CardContent>
-          </Card>
+          {/* Third Row - Age Group Categories */}
+          <div className="grid sm:grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">
+            <Card className="hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1 hover:scale-105 border bg-card animate-fade-in group" style={{ animationDelay: '0.4s' }}>
+              <CardHeader className="text-center pb-4">
+                <UserCheck className="mx-auto mb-4 text-primary group-hover:text-accent transition-colors duration-300" size={48} />
+                <CardTitle className="font-display text-xl text-primary group-hover:text-accent transition-colors duration-300">
+                  {t('lessons.adults')}
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="text-muted-foreground text-center leading-relaxed">
+                  {t('lessons.adults.desc')}
+                </p>
+              </CardContent>
+            </Card>
+            
+            <Card className="hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1 hover:scale-105 border bg-card animate-fade-in group" style={{ animationDelay: '0.5s' }}>
+              <CardHeader className="text-center pb-4">
+                <Smile className="mx-auto mb-4 text-primary group-hover:text-accent transition-colors duration-300" size={48} />
+                <CardTitle className="font-display text-xl text-primary group-hover:text-accent transition-colors duration-300">
+                  {t('lessons.kids')}
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="text-muted-foreground text-center leading-relaxed">
+                  {t('lessons.kids.desc')}
+                </p>
+              </CardContent>
+            </Card>
+          </div>
         </div>
       </div>
     </section>
