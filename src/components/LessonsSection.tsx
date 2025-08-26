@@ -76,7 +76,7 @@ const LessonsSection = () => {
           </div>
 
           {/* Bottom Row - Beginner and Intermediate */}
-          <div className="grid sm:grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">
+          <div className="grid sm:grid-cols-1 md:grid-cols-2 gap-4 md:gap-6 mb-4 md:mb-6">
             {bottomRowLessons.map((lesson, index) => (
               <Card 
                 key={index} 
