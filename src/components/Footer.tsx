@@ -10,7 +10,7 @@ const Footer = () => {
         <div className="text-center">
           <div className="flex items-center justify-center mb-4">
             <Piano className="mr-3" size={32} />
-            <span className="font-display text-2xl font-bold">Jenny's Piano Academy</span>
+            <span className="font-display text-2xl font-bold">IVY Music School</span>
           </div>
           
           <p className="text-primary-foreground/80 mb-6 max-w-2xl mx-auto">
@@ -36,7 +36,7 @@ const Footer = () => {
               <span>for music education</span>
             </div>
             <p className="text-xs text-primary-foreground/60 mt-2">
-              © 2024 Jenny's Piano Academy. All rights reserved.
+              © 2024 IVY Music School. All rights reserved.
             </p>
           </div>
         </div>

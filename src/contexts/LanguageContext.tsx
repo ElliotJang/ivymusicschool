@@ -20,7 +20,7 @@ const translations = {
     'nav.contact': '문의',
     
     // Hero
-    'hero.title': '제니 피아노 아카데미',
+    'hero.title': 'IVY 음악학원',
     'hero.subtitle': '모든 연령을 위한 일대일 피아노 레슨',
     'hero.cta': '수업 문의하기',
     
@@ -30,7 +30,7 @@ const translations = {
     'about.education': '음악 학사, 반주 전공 준학사',
     'about.experience': '경력',
     'about.exp1': '피아노 교사 및 원장, IVY 음악학원, 로스앤젤레스, CA (2009–2016)',
-    'about.exp2': '개인 피아노 교사, 제니 피아노 아카데미 (CA & GA, 2018–현재)',
+    'about.exp2': '개인 피아노 교사, IVY 음악학원 (CA & GA, 2018–현재)',
     'about.current': '현재 조지아 주 로렌스빌(Lawrenceville, GA) 자택에서 수업 진행 중이며, 새 피아노 스튜디오를 준비 중입니다.',
     'about.certifications': '자격 및 협회 가입',
     'about.cert1': 'MTAC (캘리포니아 음악교사협회) 회원',
@@ -104,7 +104,7 @@ const translations = {
     'nav.contact': 'Contact',
     
     // Hero
-    'hero.title': "Jenny's Piano Academy",
+    'hero.title': 'IVY Music School',
     'hero.subtitle': 'Teaching one-on-one piano lessons to students of all ages',
     'hero.cta': 'Contact for Lessons',
     
@@ -114,7 +114,7 @@ const translations = {
     'about.education': 'Bachelor of Arts in Music, Associate\'s in Accompaniment',
     'about.experience': 'Experience',
     'about.exp1': 'Piano Teacher and CEO, IVY Music School, Los Angeles, CA (2009–2016)',
-    'about.exp2': 'Private Piano Instructor, Jenny\'s Piano Academy (CA & GA, 2018–present)',
+    'about.exp2': 'Private Piano Instructor, IVY Music School (CA & GA, 2018–present)',
     'about.current': 'Currently teaching from home in Lawrenceville, GA. Preparing to open a new piano studio.',
     'about.certifications': 'Certifications & Affiliations',
     'about.cert1': 'Member, MTAC (Music Teachers\' Association of California)',
