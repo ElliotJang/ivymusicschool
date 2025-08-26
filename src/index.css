@@ -172,47 +172,4 @@
   .transition-bounce {
     transition: var(--transition-bounce);
   }
-
-  /* Mobile-optimized animations */
-  .animate-slide-down {
-    animation: slide-down 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-  }
-
-  .animate-slide-up {
-    animation: slide-up 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-  }
-
-  .animate-scale-in {
-    animation: scale-in 0.2s cubic-bezier(0.4, 0, 0.2, 1);
-  }
-
-  /* Touch-friendly interactions */
-  .touch-target {
-    min-height: 44px;
-    min-width: 44px;
-  }
-
-  /* Smooth scrolling for all devices */
-  html {
-    scroll-behavior: smooth;
-  }
-
-  /* Mobile scroll optimization */
-  .scroll-smooth {
-    -webkit-overflow-scrolling: touch;
-    scroll-behavior: smooth;
-  }
-
-  /* Responsive text sizing */
-  .text-responsive {
-    font-size: clamp(1rem, 4vw, 1.5rem);
-  }
-
-  .text-responsive-lg {
-    font-size: clamp(1.5rem, 6vw, 3rem);
-  }
-
-  .text-responsive-xl {
-    font-size: clamp(2rem, 8vw, 5rem);
-  }
 }

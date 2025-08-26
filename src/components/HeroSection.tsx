@@ -34,18 +34,18 @@ const HeroSection = () => {
       </div>
 
       {/* Content */}
-      <div className="relative z-20 text-center max-w-4xl mx-auto px-6 sm:px-8">
+      <div className="relative z-20 text-center max-w-4xl mx-auto px-6">
         <div className="animate-fade-in">
-          <h1 className="font-display text-responsive-xl font-bold text-white mb-4 sm:mb-6 drop-shadow-lg leading-tight">
+          <h1 className="font-display text-5xl md:text-7xl font-bold text-white mb-6 drop-shadow-lg">
             {t('hero.title')}
           </h1>
-          <p className="text-responsive md:text-2xl text-white mb-6 sm:mb-8 drop-shadow-md font-light max-w-3xl mx-auto leading-relaxed">
+          <p className="text-xl md:text-2xl text-white mb-8 drop-shadow-md font-light">
             {t('hero.subtitle')}
           </p>
           <Button
             onClick={() => scrollToSection('contact')}
             size="lg"
-            className="bg-primary text-primary-foreground hover:bg-primary/90 active:scale-95 transition-all duration-300 px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg font-semibold touch-target shadow-lg hover:shadow-xl"
+            className="bg-primary text-primary-foreground hover:bg-primary/90 transition-all duration-300 px-8 py-4 text-lg font-semibold"
           >
             {t('hero.cta')}
           </Button>

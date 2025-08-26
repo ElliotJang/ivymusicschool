@@ -91,54 +91,50 @@ const Navigation = () => {
               variant="ghost"
               size="sm"
               onClick={() => setIsMenuOpen(!isMenuOpen)}
-              className="text-primary touch-target transition-all duration-200 hover:bg-accent/10 active:scale-95"
+              className="text-primary"
             >
-              <div className="transition-transform duration-200">
-                {isMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
-              </div>
+              {isMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
             </Button>
           </div>
         </div>
 
         {/* Mobile Menu */}
-        <div className={`md:hidden overflow-hidden transition-all duration-300 ease-in-out ${
-          isMenuOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
-        }`}>
-          <div className="mt-4 pb-4 border-t border-border pt-4 animate-slide-down">
+        {isMenuOpen && (
+          <div className="md:hidden mt-4 pb-4 border-t border-border pt-4">
             <div className="flex flex-col space-y-4">
               <button
                 onClick={() => scrollToSection('home')}
-                className="text-foreground hover:text-primary transition-smooth font-medium text-left touch-target py-3 px-2 rounded-md hover:bg-accent/10 active:bg-accent/20"
+                className="text-foreground hover:text-primary transition-smooth font-medium text-left"
               >
                 {t('nav.home')}
               </button>
               <button
                 onClick={() => scrollToSection('about')}
-                className="text-foreground hover:text-primary transition-smooth font-medium text-left touch-target py-3 px-2 rounded-md hover:bg-accent/10 active:bg-accent/20"
+                className="text-foreground hover:text-primary transition-smooth font-medium text-left"
               >
                 {t('nav.about')}
               </button>
               <button
                 onClick={() => scrollToSection('lessons')}
-                className="text-foreground hover:text-primary transition-smooth font-medium text-left touch-target py-3 px-2 rounded-md hover:bg-accent/10 active:bg-accent/20"
+                className="text-foreground hover:text-primary transition-smooth font-medium text-left"
               >
                 {t('nav.lessons')}
               </button>
               <button
                 onClick={() => scrollToSection('faq')}
-                className="text-foreground hover:text-primary transition-smooth font-medium text-left touch-target py-3 px-2 rounded-md hover:bg-accent/10 active:bg-accent/20"
+                className="text-foreground hover:text-primary transition-smooth font-medium text-left"
               >
                 {t('nav.faq')}
               </button>
               <button
                 onClick={() => scrollToSection('contact')}
-                className="text-foreground hover:text-primary transition-smooth font-medium text-left touch-target py-3 px-2 rounded-md hover:bg-accent/10 active:bg-accent/20"
+                className="text-foreground hover:text-primary transition-smooth font-medium text-left"
               >
                 {t('nav.contact')}
               </button>
             </div>
           </div>
-        </div>
+        )}
       </div>
     </nav>
   );
