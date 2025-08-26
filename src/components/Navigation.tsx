@@ -29,7 +29,7 @@ const Navigation = () => {
             onClick={() => scrollToSection('home')}
           >
             <Piano className="h-8 w-8" />
-            <span>Jenny's Piano</span>
+            <span>IVY Music</span>
           </div>
 
           {/* Desktop Navigation */}
