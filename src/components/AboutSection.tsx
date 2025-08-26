@@ -28,10 +28,10 @@ const AboutSection = () => {
 
               <div className="grid sm:grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
                 <div className="space-y-6">
-                  <div className="flex items-start space-x-4">
-                    <GraduationCap className="text-accent mt-1 flex-shrink-0" size={24} />
+                  <div className="flex items-start space-x-4 group">
+                    <GraduationCap className="text-accent mt-1 flex-shrink-0 group-hover:text-accent transition-colors duration-300" size={24} />
                     <div>
-                      <h4 className="font-semibold text-primary mb-2">
+                      <h4 className="font-semibold text-primary mb-2 group-hover:text-accent transition-colors duration-300">
                         {t('about.experience')}
                       </h4>
                       <ul className="space-y-2 text-muted-foreground">
@@ -41,8 +41,8 @@ const AboutSection = () => {
                     </div>
                   </div>
 
-                  <div className="flex items-start space-x-4">
-                    <MapPin className="text-accent mt-1 flex-shrink-0" size={24} />
+                  <div className="flex items-start space-x-4 group">
+                    <MapPin className="text-accent mt-1 flex-shrink-0 group-hover:text-accent transition-colors duration-300" size={24} />
                     <div>
                       <p className="text-muted-foreground">
                         {t('about.current')}
@@ -52,10 +52,10 @@ const AboutSection = () => {
                 </div>
 
                 <div className="space-y-6">
-                  <div className="flex items-start space-x-4">
-                    <Award className="text-accent mt-1 flex-shrink-0" size={24} />
+                  <div className="flex items-start space-x-4 group">
+                    <Award className="text-accent mt-1 flex-shrink-0 group-hover:text-accent transition-colors duration-300" size={24} />
                     <div>
-                      <h4 className="font-semibold text-primary mb-2">
+                      <h4 className="font-semibold text-primary mb-2 group-hover:text-accent transition-colors duration-300">
                         {t('about.certifications')}
                       </h4>
                       <ul className="space-y-2 text-muted-foreground">

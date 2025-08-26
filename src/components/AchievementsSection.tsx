@@ -39,10 +39,10 @@ const AchievementsSection = () => {
         {/* Achievement Stats */}
         <div className="grid sm:grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 mb-12 md:mb-16">
           {achievements.map((achievement, index) => (
-            <Card key={index} className="hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1 hover:scale-105 bg-card border text-center animate-fade-in" style={{ animationDelay: `${index * 0.1}s` }}>
+            <Card key={index} className="hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1 hover:scale-105 bg-card border text-center animate-fade-in group" style={{ animationDelay: `${index * 0.1}s` }}>
               <CardContent className="p-6 md:p-8">
-                <achievement.icon className={`mx-auto mb-4 ${achievement.color}`} size={48} />
-                <div className="font-display text-4xl font-bold text-primary mb-2">
+                <achievement.icon className={`mx-auto mb-4 ${achievement.color} group-hover:text-accent transition-colors duration-300`} size={48} />
+                <div className="font-display text-4xl font-bold text-primary group-hover:text-accent transition-colors duration-300 mb-2">
                   {achievement.number}
                 </div>
                 <p className="text-muted-foreground leading-relaxed">

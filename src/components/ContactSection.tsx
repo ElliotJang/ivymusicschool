@@ -36,26 +36,26 @@ const ContactSection = () => {
               <div className="grid sm:grid-cols-1 lg:grid-cols-2 gap-6 md:gap-8">
                 {/* Contact Information */}
                   <div className="space-y-6">
-                   <div className="flex items-center space-x-4 p-3 md:p-4 rounded-lg bg-white/50 hover:bg-white/70 transition-all duration-300">
-                     <Phone className="text-accent flex-shrink-0" size={24} />
+                   <div className="flex items-center space-x-4 p-3 md:p-4 rounded-lg bg-white/50 hover:bg-white/70 transition-all duration-300 group">
+                     <Phone className="text-accent flex-shrink-0 group-hover:text-accent transition-colors duration-300" size={24} />
                      <div>
-                       <div className="font-semibold text-primary">{t('contact.phone')}</div>
+                       <div className="font-semibold text-primary group-hover:text-accent transition-colors duration-300">{t('contact.phone')}</div>
                        <div className="text-muted-foreground">213-505-7335</div>
                      </div>
                    </div>
 
-                   <div className="flex items-center space-x-4 p-3 md:p-4 rounded-lg bg-white/50 hover:bg-white/70 transition-all duration-300">
-                     <Mail className="text-accent flex-shrink-0" size={24} />
+                   <div className="flex items-center space-x-4 p-3 md:p-4 rounded-lg bg-white/50 hover:bg-white/70 transition-all duration-300 group">
+                     <Mail className="text-accent flex-shrink-0 group-hover:text-accent transition-colors duration-300" size={24} />
                      <div>
-                       <div className="font-semibold text-primary">{t('contact.email')}</div>
+                       <div className="font-semibold text-primary group-hover:text-accent transition-colors duration-300">{t('contact.email')}</div>
                        <div className="text-muted-foreground">jennyspianoacademy@gmail.com</div>
                      </div>
                    </div>
 
-                   <div className="flex items-center space-x-4 p-3 md:p-4 rounded-lg bg-white/50 hover:bg-white/70 transition-all duration-300">
-                     <MapPin className="text-accent flex-shrink-0" size={24} />
+                   <div className="flex items-center space-x-4 p-3 md:p-4 rounded-lg bg-white/50 hover:bg-white/70 transition-all duration-300 group">
+                     <MapPin className="text-accent flex-shrink-0 group-hover:text-accent transition-colors duration-300" size={24} />
                      <div>
-                       <div className="font-semibold text-primary">{t('contact.address')}</div>
+                       <div className="font-semibold text-primary group-hover:text-accent transition-colors duration-300">{t('contact.address')}</div>
                        <div className="text-muted-foreground">{t('contact.location')}</div>
                      </div>
                    </div>
