@@ -9,19 +9,19 @@ const AchievementsSection = () => {
   const achievements = [
     {
       icon: Users,
-      number: '7+',
+      number: '7',
       title: t('achievements.recitals'),
       color: 'text-accent'
     },
     {
       icon: Trophy,
-      number: '10+',
+      number: '10',
       title: t('achievements.competition'),
       color: 'text-primary'
     },
     {
       icon: Award,
-      number: '15+',
+      number: '15',
       title: t('achievements.merit'),
       color: 'text-accent'
     }
