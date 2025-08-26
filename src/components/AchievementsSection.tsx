@@ -37,15 +37,15 @@ const AchievementsSection = () => {
         </div>
 
         {/* Achievement Stats */}
-        <div className="grid md:grid-cols-3 gap-8 mb-16">
+        <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-6 sm:gap-8 mb-16">
           {achievements.map((achievement, index) => (
-            <Card key={index} className="hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1 bg-card border text-center">
-              <CardContent className="p-8">
-                <achievement.icon className={`mx-auto mb-4 ${achievement.color}`} size={48} />
-                <div className="font-display text-4xl font-bold text-primary mb-2">
+            <Card key={index} className="hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1 hover:scale-105 active:scale-95 bg-card border text-center group cursor-pointer">
+              <CardContent className="p-6 sm:p-8">
+                <achievement.icon className={`mx-auto mb-4 ${achievement.color} transition-transform duration-300 group-hover:scale-110`} size={48} />
+                <div className="font-display text-3xl sm:text-4xl font-bold text-primary mb-2 transition-colors duration-300 group-hover:text-accent">
                   {achievement.number}
                 </div>
-                <p className="text-muted-foreground leading-relaxed">
+                <p className="text-muted-foreground leading-relaxed text-sm sm:text-base">
                   {achievement.title}
                 </p>
               </CardContent>
