@@ -1,6 +1,6 @@
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { useLanguage } from '@/contexts/LanguageContext';
-import { Music, Heart, Users, Brain, Zap, Smile, UserCheck } from 'lucide-react';
+import { Music, Heart, Users, Brain, Smile, UserCheck } from 'lucide-react';
 
 const LessonsSection = () => {
   const { t } = useLanguage();
@@ -19,13 +19,6 @@ const LessonsSection = () => {
       color: 'text-primary'
     }
   ];
-
-  const middleRowLesson = {
-    icon: Zap,
-    title: t('lessons.chord'),
-    description: t('lessons.chord.desc'),
-    color: 'text-primary'
-  };
 
   const bottomRowLessons = [
     {
@@ -80,25 +73,6 @@ const LessonsSection = () => {
                 </CardContent>
               </Card>
             ))}
-          </div>
-
-          {/* Middle Row - Chord & Lead Sheet (Centered) */}
-          <div className="flex justify-center mb-4 md:mb-6">
-            <div className="w-full max-w-md px-4 md:px-0">
-              <Card className="hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1 hover:scale-105 border bg-card animate-fade-in group" style={{ animationDelay: '0.2s' }}>
-                <CardHeader className="text-center pb-4">
-                  <middleRowLesson.icon className={`mx-auto mb-4 ${middleRowLesson.color} group-hover:text-accent transition-colors duration-300`} size={48} />
-                  <CardTitle className="font-display text-xl text-primary group-hover:text-accent transition-colors duration-300">
-                    {middleRowLesson.title}
-                  </CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-muted-foreground text-center leading-relaxed">
-                    {middleRowLesson.description}
-                  </p>
-                </CardContent>
-              </Card>
-            </div>
           </div>
 
           {/* Bottom Row - Beginner and Intermediate */}
