@@ -45,7 +45,7 @@ const HeroSection = () => {
           <Button
             onClick={() => scrollToSection('contact')}
             size="lg"
-            className="bg-primary text-primary-foreground hover:bg-primary/90 transition-all duration-300 px-8 py-4 text-lg font-semibold"
+            className="bg-primary text-primary-foreground hover:bg-primary/90 hover:shadow-glow hover:scale-105 transition-all duration-300 px-8 py-4 text-lg font-semibold"
           >
             {t('hero.cta')}
           </Button>

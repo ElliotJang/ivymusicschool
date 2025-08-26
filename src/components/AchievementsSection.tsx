@@ -11,7 +11,7 @@ const AchievementsSection = () => {
       icon: Users,
       number: '7+',
       title: t('achievements.recitals'),
-      color: 'text-accent'
+      color: 'text-primary'
     },
     {
       icon: Trophy,
@@ -23,7 +23,7 @@ const AchievementsSection = () => {
       icon: Award,
       number: '15+',
       title: t('achievements.merit'),
-      color: 'text-accent'
+      color: 'text-primary'
     }
   ];
 
