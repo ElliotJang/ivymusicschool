@@ -1,4 +1,10 @@
-import { useEffect, useState } from 'react';
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel";
 
 const UniversityCarousel = () => {
   const universities = [
@@ -13,23 +19,27 @@ const UniversityCarousel = () => {
     'UC San Diego'
   ];
 
-  // Duplicate the array for seamless infinite scroll
-  const duplicatedUniversities = [...universities, ...universities];
-
   return (
-    <div className="w-full overflow-hidden bg-white/10 backdrop-blur-sm rounded-lg p-6">
-      <div className="relative">
-        <div className="flex animate-scroll-left">
-          {duplicatedUniversities.map((university, index) => (
-            <div
-              key={index}
-              className="flex-shrink-0 px-8 py-4 mx-4 rounded-lg border text-center min-w-[250px] transition-all duration-300 bg-white text-primary border-accent shadow-card"
-            >
-              <div className="font-semibold text-lg">{university}</div>
-            </div>
+    <div className="w-full bg-white/10 backdrop-blur-sm rounded-lg p-6">
+      <Carousel
+        opts={{
+          align: "start",
+          loop: true,
+        }}
+        className="w-full"
+      >
+        <CarouselContent className="-ml-2 md:-ml-4">
+          {universities.map((university, index) => (
+            <CarouselItem key={index} className="pl-2 md:pl-4 basis-auto">
+              <div className="px-8 py-4 rounded-lg border text-center min-w-[250px] transition-all duration-300 bg-white text-primary border-accent shadow-card">
+                <div className="font-semibold text-lg">{university}</div>
+              </div>
+            </CarouselItem>
           ))}
-        </div>
-      </div>
+        </CarouselContent>
+        <CarouselPrevious className="hidden md:flex" />
+        <CarouselNext className="hidden md:flex" />
+      </Carousel>
     </div>
   );
 };
