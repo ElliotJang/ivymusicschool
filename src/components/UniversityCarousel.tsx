@@ -30,8 +30,8 @@ const UniversityCarousel = () => {
       >
         <CarouselContent className="-ml-2 md:-ml-4">
           {universities.map((university, index) => (
-            <CarouselItem key={index} className="pl-2 md:pl-4 basis-auto">
-              <div className="px-8 py-4 rounded-lg border text-center min-w-[250px] transition-all duration-300 bg-white text-primary border-accent shadow-card">
+            <CarouselItem key={index} className="pl-2 md:pl-4 basis-full md:basis-auto">
+              <div className="px-8 py-4 rounded-lg border text-center min-w-[250px] md:min-w-[250px] transition-all duration-300 bg-white text-primary border-accent shadow-card">
                 <div className="font-semibold text-lg">{university}</div>
               </div>
             </CarouselItem>
