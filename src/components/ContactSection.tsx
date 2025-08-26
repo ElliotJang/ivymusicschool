@@ -19,24 +19,24 @@ const ContactSection = () => {
   };
 
   return (
-    <section id="contact" className="py-20 gradient-subtle">
-      <div className="container mx-auto px-6">
-        <div className="text-center mb-16">
-          <h2 className="font-display text-4xl md:text-5xl font-bold text-primary mb-4">
+    <section id="contact" className="py-12 md:py-20 gradient-subtle">
+      <div className="container mx-auto px-4 md:px-6">
+        <div className="text-center mb-12 md:mb-16 animate-fade-in">
+          <h2 className="font-display text-3xl md:text-5xl font-bold text-primary mb-4">
             {t('contact.title')}
           </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+          <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto px-4">
             {t('contact.subtitle')}
           </p>
         </div>
 
         <div className="max-w-4xl mx-auto">
-          <Card className="shadow-elegant gradient-card border-0">
-            <CardContent className="p-8">
-              <div className="grid md:grid-cols-2 gap-8">
+          <Card className="shadow-elegant gradient-card border-0 animate-fade-in hover:shadow-glow transition-all duration-500">
+            <CardContent className="p-6 md:p-8">
+              <div className="grid sm:grid-cols-1 lg:grid-cols-2 gap-6 md:gap-8">
                 {/* Contact Information */}
                   <div className="space-y-6">
-                   <div className="flex items-center space-x-4 p-4 rounded-lg bg-white/50">
+                   <div className="flex items-center space-x-4 p-3 md:p-4 rounded-lg bg-white/50 hover:bg-white/70 transition-all duration-300">
                      <Phone className="text-accent flex-shrink-0" size={24} />
                      <div>
                        <div className="font-semibold text-primary">{t('contact.phone')}</div>
@@ -44,7 +44,7 @@ const ContactSection = () => {
                      </div>
                    </div>
 
-                   <div className="flex items-center space-x-4 p-4 rounded-lg bg-white/50">
+                   <div className="flex items-center space-x-4 p-3 md:p-4 rounded-lg bg-white/50 hover:bg-white/70 transition-all duration-300">
                      <Mail className="text-accent flex-shrink-0" size={24} />
                      <div>
                        <div className="font-semibold text-primary">{t('contact.email')}</div>
@@ -52,7 +52,7 @@ const ContactSection = () => {
                      </div>
                    </div>
 
-                   <div className="flex items-center space-x-4 p-4 rounded-lg bg-white/50">
+                   <div className="flex items-center space-x-4 p-3 md:p-4 rounded-lg bg-white/50 hover:bg-white/70 transition-all duration-300">
                      <MapPin className="text-accent flex-shrink-0" size={24} />
                      <div>
                        <div className="font-semibold text-primary">{t('contact.address')}</div>
@@ -61,8 +61,8 @@ const ContactSection = () => {
                    </div>
                  </div>
 
-                 {/* Contact Buttons */}
-                 <div className="space-y-4">
+                  {/* Contact Buttons */}
+                  <div className="space-y-3 md:space-y-4">
                    <Button
                      onClick={handlePhoneCall}
                      size="lg"

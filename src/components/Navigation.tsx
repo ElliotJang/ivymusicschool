@@ -100,7 +100,7 @@ const Navigation = () => {
 
         {/* Mobile Menu */}
         {isMenuOpen && (
-          <div className="md:hidden mt-4 pb-4 border-t border-border pt-4">
+          <div className="md:hidden mt-4 pb-4 border-t border-border pt-4 animate-fade-in">
             <div className="flex flex-col space-y-4">
               <button
                 onClick={() => scrollToSection('home')}

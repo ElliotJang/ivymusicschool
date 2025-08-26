@@ -23,22 +23,22 @@ const FAQSection = () => {
   };
 
   return (
-    <section id="faq" className="py-20 bg-background">
-      <div className="container mx-auto px-6">
-        <div className="text-center mb-16">
-          <h2 className="font-display text-4xl md:text-5xl font-bold text-primary mb-4">
+    <section id="faq" className="py-12 md:py-20 bg-background">
+      <div className="container mx-auto px-4 md:px-6">
+        <div className="text-center mb-12 md:mb-16 animate-fade-in">
+          <h2 className="font-display text-3xl md:text-5xl font-bold text-primary mb-4">
             {t('faq.title')}
           </h2>
         </div>
 
-        <div className="max-w-4xl mx-auto space-y-4">
+        <div className="max-w-4xl mx-auto space-y-3 md:space-y-4">
           {faqItems.map((item, index) => (
-            <Card key={index} className="shadow-card gradient-card border-0 overflow-hidden">
+            <Card key={index} className="shadow-card gradient-card border-0 overflow-hidden hover:shadow-elegant transition-all duration-300 animate-fade-in" style={{ animationDelay: `${index * 0.1}s` }}>
               <button
                 onClick={() => toggleItem(index)}
-                className="w-full p-6 text-left flex items-center justify-between hover:bg-white/50 transition-smooth"
+                className="w-full p-4 md:p-6 text-left flex items-center justify-between hover:bg-white/50 transition-smooth"
               >
-                <h3 className="font-semibold text-primary text-lg pr-4">
+                <h3 className="font-semibold text-primary text-base md:text-lg pr-4">
                   {item.question}
                 </h3>
                 {openItem === index ? (
@@ -49,7 +49,7 @@ const FAQSection = () => {
               </button>
               
               {openItem === index && (
-                <CardContent className="px-6 pb-6 pt-0 animate-fade-in">
+                <CardContent className="px-4 md:px-6 pb-4 md:pb-6 pt-0 animate-fade-in">
                   <p className="text-muted-foreground leading-relaxed">
                     {item.answer}
                   </p>

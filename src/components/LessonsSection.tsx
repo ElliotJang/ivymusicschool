@@ -43,28 +43,29 @@ const LessonsSection = () => {
   ];
 
   return (
-    <section id="lessons" className="py-20 bg-secondary/30">
-      <div className="container mx-auto px-6">
-        <div className="text-center mb-16">
-          <h2 className="font-display text-4xl md:text-5xl font-bold text-primary mb-4">
+    <section id="lessons" className="py-12 md:py-20 bg-secondary/30">
+      <div className="container mx-auto px-4 md:px-6">
+        <div className="text-center mb-12 md:mb-16 animate-fade-in">
+          <h2 className="font-display text-3xl md:text-5xl font-bold text-primary mb-4">
             {t('lessons.title')}
           </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+          <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto px-4">
             {t('lessons.subtitle')}
           </p>
         </div>
 
-        <div className="mb-12">
-          <h3 className="font-display text-3xl font-semibold text-primary text-center mb-8">
+        <div className="mb-8 md:mb-12">
+          <h3 className="font-display text-2xl md:text-3xl font-semibold text-primary text-center mb-6 md:mb-8 animate-fade-in">
             {t('lessons.options')}
           </h3>
           
           {/* Top Row - Classical and Pop */}
-          <div className="grid md:grid-cols-2 gap-6 mb-6">
+          <div className="grid sm:grid-cols-1 md:grid-cols-2 gap-4 md:gap-6 mb-4 md:mb-6">
             {topRowLessons.map((lesson, index) => (
               <Card 
                 key={index} 
-                className="hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1 border bg-card"
+                className="hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1 hover:scale-105 border bg-card animate-fade-in"
+                style={{ animationDelay: `${index * 0.1}s` }}
               >
                 <CardHeader className="text-center pb-4">
                   <lesson.icon className={`mx-auto mb-4 ${lesson.color}`} size={48} />
@@ -82,9 +83,9 @@ const LessonsSection = () => {
           </div>
 
           {/* Middle Row - Chord & Lead Sheet (Centered) */}
-          <div className="flex justify-center mb-6">
-            <div className="w-full max-w-md">
-              <Card className="hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1 border bg-card">
+          <div className="flex justify-center mb-4 md:mb-6">
+            <div className="w-full max-w-md px-4 md:px-0">
+              <Card className="hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1 hover:scale-105 border bg-card animate-fade-in" style={{ animationDelay: '0.2s' }}>
                 <CardHeader className="text-center pb-4">
                   <middleRowLesson.icon className={`mx-auto mb-4 ${middleRowLesson.color}`} size={48} />
                   <CardTitle className="font-display text-xl text-primary">
@@ -101,11 +102,12 @@ const LessonsSection = () => {
           </div>
 
           {/* Bottom Row - Beginner and Intermediate */}
-          <div className="grid md:grid-cols-2 gap-6">
+          <div className="grid sm:grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">
             {bottomRowLessons.map((lesson, index) => (
               <Card 
                 key={index} 
-                className="hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1 border bg-card"
+                className="hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1 hover:scale-105 border bg-card animate-fade-in"
+                style={{ animationDelay: `${(index + 3) * 0.1}s` }}
               >
                 <CardHeader className="text-center pb-4">
                   <lesson.icon className={`mx-auto mb-4 ${lesson.color}`} size={48} />
@@ -124,8 +126,8 @@ const LessonsSection = () => {
         </div>
 
         {/* Age Group Categories */}
-        <div className="grid md:grid-cols-2 gap-6">
-          <Card className="hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1 border bg-card">
+        <div className="grid sm:grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">
+          <Card className="hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1 hover:scale-105 border bg-card animate-fade-in" style={{ animationDelay: '0.5s' }}>
             <CardHeader className="text-center pb-4">
               <UserCheck className="mx-auto mb-4 text-primary" size={48} />
               <CardTitle className="font-display text-xl text-primary">
@@ -139,7 +141,7 @@ const LessonsSection = () => {
             </CardContent>
           </Card>
           
-          <Card className="hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1 border bg-card">
+          <Card className="hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1 hover:scale-105 border bg-card animate-fade-in" style={{ animationDelay: '0.6s' }}>
             <CardHeader className="text-center pb-4">
               <Smile className="mx-auto mb-4 text-primary" size={48} />
               <CardTitle className="font-display text-xl text-primary">
