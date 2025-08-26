@@ -83,8 +83,8 @@ const LessonsSection = () => {
           </div>
 
           {/* Middle Row - Chord & Lead Sheet (Centered) */}
-          <div className="mb-4 md:mb-6 md:flex md:justify-center">
-            <div className="w-full md:w-96 px-4 md:px-0">
+          <div className="grid md:grid-cols-2 gap-4 md:gap-6 mb-4 md:mb-6">
+            <div className="md:col-start-1 md:col-end-2 md:mx-auto">
               <Card className="hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1 hover:scale-105 border bg-card animate-fade-in group" style={{ animationDelay: '0.2s' }}>
                 <CardHeader className="text-center pb-4">
                   <middleRowLesson.icon className={`mx-auto mb-4 ${middleRowLesson.color} group-hover:text-accent transition-colors duration-300`} size={48} />
