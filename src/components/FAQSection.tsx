@@ -23,7 +23,7 @@ const FAQSection = () => {
   };
 
   return (
-    <section id="faq" className="py-12 md:py-20 bg-background">
+    <section id="faq" className="py-12 md:py-20 bg-muted/50">
       <div className="container mx-auto px-4 md:px-6">
         <div className="text-center mb-12 md:mb-16 animate-fade-in">
           <h2 className="font-display text-3xl md:text-5xl font-bold text-primary mb-4">

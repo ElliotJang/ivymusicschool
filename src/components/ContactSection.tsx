@@ -11,7 +11,7 @@ const ContactSection = () => {
   };
 
   const handleEmail = () => {
-    window.open('mailto:jennyspianoacademy@gmail.com', '_self');
+    window.open('mailto:hjennykang@gmail.com', '_self');
   };
 
   const handleSMS = () => {
@@ -19,7 +19,7 @@ const ContactSection = () => {
   };
 
   return (
-    <section id="contact" className="py-12 md:py-20 gradient-subtle">
+    <section id="contact" className="py-12 md:py-20 bg-primary/5">
       <div className="container mx-auto px-4 md:px-6">
         <div className="text-center mb-12 md:mb-16 animate-fade-in">
           <h2 className="font-display text-3xl md:text-5xl font-bold text-primary mb-4">
@@ -31,7 +31,7 @@ const ContactSection = () => {
         </div>
 
         <div className="max-w-4xl mx-auto">
-          <Card className="shadow-elegant gradient-card border-0 animate-fade-in hover:shadow-glow transition-all duration-500">
+          <Card className="shadow-elegant gradient-card border-0 animate-fade-in hover:shadow-glow hover:scale-[1.02] transition-all duration-500">
             <CardContent className="p-6 md:p-8">
               <div className="grid sm:grid-cols-1 lg:grid-cols-2 gap-6 md:gap-8">
                 {/* Contact Information */}
@@ -48,7 +48,7 @@ const ContactSection = () => {
                      <Mail className="text-accent flex-shrink-0 group-hover:text-accent transition-colors duration-300" size={24} />
                      <div>
                        <div className="font-semibold text-primary group-hover:text-accent transition-colors duration-300">{t('contact.email')}</div>
-                       <div className="text-muted-foreground">jennyspianoacademy@gmail.com</div>
+                       <div className="text-muted-foreground">hjennykang@gmail.com</div>
                      </div>
                    </div>
 

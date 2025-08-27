@@ -7,6 +7,7 @@ import AchievementsSection from '@/components/AchievementsSection';
 import FAQSection from '@/components/FAQSection';
 import ContactSection from '@/components/ContactSection';
 import Footer from '@/components/Footer';
+import BackToTop from '@/components/BackToTop';
 
 const Index = () => {
   return (
@@ -20,6 +21,7 @@ const Index = () => {
         <FAQSection />
         <ContactSection />
         <Footer />
+        <BackToTop />
       </div>
     </LanguageProvider>
   );

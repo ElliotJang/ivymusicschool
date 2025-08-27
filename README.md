@@ -1,73 +1,120 @@
-# Welcome to your Lovable project
+# IVY Music School
 
-## Project info
+A modern, responsive website for IVY Music School, offering professional and personalized piano lessons for all ages.
 
-**URL**: https://lovable.dev/projects/a5c395d9-f473-4fc0-bc81-8d1d4bbd7673
+## Features
 
-## How can I edit this code?
+- **Responsive Design**: Mobile-first approach with modern UI/UX
+- **Multi-language Support**: Korean and English language support
+- **Modern Components**: Built with React, TypeScript, and Tailwind CSS
+- **Beautiful Animations**: Smooth transitions and hover effects
+- **Contact Integration**: Direct phone, SMS, and email integration
 
-There are several ways of editing your application.
+## Tech Stack
 
-**Use Lovable**
+- **Frontend**: React 18 + TypeScript
+- **Styling**: Tailwind CSS with custom design system
+- **Build Tool**: Vite
+- **UI Components**: Custom component library with shadcn/ui
+- **Icons**: Lucide React
+- **Animations**: CSS animations and transitions
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/a5c395d9-f473-4fc0-bc81-8d1d4bbd7673) and start prompting.
+## Getting Started
 
-Changes made via Lovable will be committed automatically to this repo.
+### Prerequisites
 
-**Use your preferred IDE**
+- Node.js 18+ 
+- npm, yarn, or bun
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+### Installation
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
+1. Clone the repository:
+```bash
+git clone <your-repo-url>
+cd ivymusicschool
 ```
 
-**Edit a file directly in GitHub**
+2. Install dependencies:
+```bash
+npm install
+# or
+yarn install
+# or
+bun install
+```
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+3. Start the development server:
+```bash
+npm run dev
+# or
+yarn dev
+# or
+bun dev
+```
 
-**Use GitHub Codespaces**
+4. Open your browser and navigate to `http://localhost:5173`
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+## Project Structure
 
-## What technologies are used for this project?
+```
+src/
+├── components/          # React components
+│   ├── ui/            # Reusable UI components
+│   └── ...            # Page-specific components
+├── contexts/           # React contexts (Language, etc.)
+├── hooks/              # Custom React hooks
+├── lib/                # Utility functions
+├── pages/              # Page components
+└── assets/             # Images and static assets
+```
 
-This project is built with:
+## Available Scripts
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+- `npm run dev` - Start development server
+- `npm run build` - Build for production
+- `npm run preview` - Preview production build
+- `npm run lint` - Run ESLint
+- `npm run type-check` - Run TypeScript type checking
 
-## How can I deploy this project?
+## Customization
 
-Simply open [Lovable](https://lovable.dev/projects/a5c395d9-f473-4fc0-bc81-8d1d4bbd7673) and click on Share -> Publish.
+### Colors and Theme
+The project uses a custom color palette defined in `tailwind.config.ts`. You can modify the colors to match your brand.
 
-## Can I connect a custom domain to my Lovable project?
+### Content
+Update the content in the language context files to modify text and translations.
 
-Yes, you can!
+### Images
+Replace images in the `src/assets/` directory with your own branded content.
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+## Deployment
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+### Build for Production
+```bash
+npm run build
+```
+
+The built files will be in the `dist/` directory, ready for deployment to any static hosting service.
+
+### Recommended Hosting
+- Vercel
+- Netlify
+- GitHub Pages
+- AWS S3 + CloudFront
+
+## Contributing
+
+1. Fork the repository
+2. Create a feature branch
+3. Make your changes
+4. Test thoroughly
+5. Submit a pull request
+
+## License
+
+This project is licensed under the MIT License.
+
+## Contact
+
+For questions about this project, contact the development team.
+For questions about IVY Music School services, contact hjennykang@gmail.com

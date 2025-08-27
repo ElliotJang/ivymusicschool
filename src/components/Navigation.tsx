@@ -20,7 +20,7 @@ const Navigation = () => {
   };
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 gradient-card border-b border-border shadow-elegant backdrop-blur-sm">
+    <nav className="fixed top-0 left-0 right-0 z-50 gradient-card border-b border-border shadow-elegant backdrop-blur-md transition-all duration-300">
       <div className="container mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
           {/* Logo */}
@@ -28,7 +28,7 @@ const Navigation = () => {
             className="flex items-center space-x-3 font-display font-bold text-2xl text-primary cursor-pointer transition-smooth hover:text-primary-light"
             onClick={() => scrollToSection('home')}
           >
-            <img src="/lovable-uploads/fac41a56-9bf4-4b94-a08e-158db005d606.png" alt="IVY Music School" className="h-10 w-10" />
+            <img src="/favicon.png" alt="IVY Music School" className="h-10 w-10" />
             <span>IVY Music</span>
           </div>
 

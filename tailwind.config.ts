@@ -99,6 +99,44 @@ export default {
 				'float': {
 					'0%, 100%': { transform: 'translateY(0px)' },
 					'50%': { transform: 'translateY(-10px)' }
+				},
+				'typing': {
+					from: { width: '0' },
+					to: { width: '100%' }
+				},
+				'slide-up': {
+					from: {
+						opacity: '0',
+						transform: 'translateY(30px)'
+					},
+					to: {
+						opacity: '1',
+						transform: 'translateY(0)'
+					}
+				},
+				'scale-in': {
+					from: {
+						opacity: '0',
+						transform: 'scale(0.9)'
+					},
+					to: {
+						opacity: '1',
+						transform: 'scale(1)'
+					}
+				},
+				'float-enhanced': {
+					'0%, 100%': { 
+						transform: 'translateY(0px) rotate(0deg)' 
+					},
+					'25%': { 
+						transform: 'translateY(-10px) rotate(2deg)' 
+					},
+					'50%': { 
+						transform: 'translateY(-5px) rotate(-1deg)' 
+					},
+					'75%': { 
+						transform: 'translateY(-15px) rotate(1deg)' 
+					}
 				}
 			},
 			animation: {
@@ -106,7 +144,11 @@ export default {
 				'accordion-up': 'accordion-up 0.2s ease-out',
 				'scroll-left': 'scroll-left 30s linear infinite',
 				'fade-in': 'fade-in 0.6s ease-out',
-				'float': 'float 3s ease-in-out infinite'
+				'float': 'float 3s ease-in-out infinite',
+				'typing': 'typing 3.5s steps(40, end)',
+				'slide-up': 'slide-up 0.6s ease-out',
+				'scale-in': 'scale-in 0.5s ease-out',
+				'float-enhanced': 'float-enhanced 4s ease-in-out infinite'
 			}
 		}
 	},

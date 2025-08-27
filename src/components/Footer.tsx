@@ -9,7 +9,7 @@ const Footer = () => {
       <div className="container mx-auto px-4 md:px-6">
         <div className="text-center">
           <div className="flex items-center justify-center mb-4 animate-fade-in">
-            <img src="/lovable-uploads/fac41a56-9bf4-4b94-a08e-158db005d606.png" alt="IVY Music School Logo" className="mr-3 w-8 h-8 object-contain" />
+            <img src="/favicon.png" alt="IVY Music School Logo" className="mr-3 w-8 h-8 object-contain" />
             <span className="font-display text-xl md:text-2xl font-bold">IVY Music School</span>
           </div>
           
@@ -22,7 +22,7 @@ const Footer = () => {
               <span>📞 213-505-7335</span>
             </div>
             <div className="flex items-center">
-              <span>✉️ jennyspianoacademy@gmail.com</span>
+              <span>✉️ hjennykang@gmail.com</span>
             </div>
             <div className="flex items-center">
               <span>📍 Lawrenceville, GA</span>
