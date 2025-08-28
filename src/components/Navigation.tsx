@@ -28,7 +28,7 @@ const Navigation = () => {
             className="flex items-center space-x-3 font-display font-bold text-2xl text-primary cursor-pointer transition-smooth hover:text-primary-light"
             onClick={() => scrollToSection('home')}
           >
-            <img src="/src/assets/ivy-music-logo.png" alt="IVY Music School" className="h-10 w-10" />
+            <img src="/src/assets/IVY-2.png" alt="IVY Music School" className="h-10 w-10" />
             <span>IVY Music</span>
           </div>
 
