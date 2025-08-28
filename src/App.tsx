@@ -5,7 +5,7 @@ import NotFound from "./pages/NotFound";
 
 const App = () => (
   <TooltipProvider>
-    <BrowserRouter basename={import.meta.env.BASE_URL}>
+    <BrowserRouter basename="/ivymusicschool">
       <Routes>
         <Route path="/" element={<Index />} />
         <Route path="*" element={<NotFound />} />
