@@ -9,7 +9,7 @@ const Footer = () => {
       <div className="container mx-auto px-4 md:px-6">
         <div className="text-center">
           <div className="flex items-center justify-center mb-4 animate-fade-in">
-          <img src="/ivymusicschool/src/assets/ivy-music-logo.png" alt="IVY Music School Logo" className="mr-3 w-8 h-8 object-contain" />
+          <img src="/src/assets/ivy-music-logo.png" alt="IVY Music School Logo" className="mr-3 w-8 h-8 object-contain" />
             <span className="font-display text-xl md:text-2xl font-bold">IVY Music School</span>
           </div>
           
